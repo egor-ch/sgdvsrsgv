@@ -9,6 +9,7 @@
   clean evaluation and timing.
 - `sim_section3.py` — tuning (validation, c = 1), evaluation designs A/B (10 paired seeds),
   radius sweep, step-length-matched SGD controls, figures. `python sim_section3.py run`.
+- `check_tuning_budget.py` — Section 4: search costs (runs, gradient evaluations, seconds) and SGD re-tuned with the same budget as R-SGD (36 values of alpha0). Run after `sim_section3.py run`; writes `results_tuning_budget.json`.
 - `make_tables3.py` — the LaTeX tables used in the report.
 
 Requirements: see `requirements.txt` (Python 3.11+; float64 throughout).
